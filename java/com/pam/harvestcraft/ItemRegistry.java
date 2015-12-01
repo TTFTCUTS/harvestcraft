@@ -2470,7 +2470,7 @@ import net.minecraft.item.ItemArmor;
 /* 2469 */     walleyerawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("walleyerawItem").setTextureName("harvestcraft:walleyerawItem").setCreativeTab(harvestcraft.tabHarvestCraft3);
 /* 2470 */     GameRegistry.registerItem(walleyerawItem, "walleyerawItem");
 /*      */     
-/* 2472 */     holidaycakeItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("holidaycakeItem").setTextureName("harvestcraft:holidaycakeItem").setCreativeTab(harvestcraft.tabHarvestCraft3);
+/* 2472 */     holidaycakeItem = new ItemPamCakeFood(10, mealsaturation, false, BlockRegistry.pamholidayCake).setUnlocalizedName("holidaycakeItem").setTextureName("harvestcraft:holidaycakeItem").setCreativeTab(harvestcraft.tabHarvestCraft3);
 /* 2473 */     GameRegistry.registerItem(holidaycakeItem, "holidaycakeItem");
 /*      */     
 /* 2475 */     clamcookedItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("clamcookedItem").setTextureName("harvestcraft:clamcookedItem").setCreativeTab(harvestcraft.tabHarvestCraft3);
