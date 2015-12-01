@@ -39,21 +39,6 @@
 /*     */   
 /*     */   public AxisAlignedBB getCollisionBoundingBoxFromPool(World p_149668_1_, int p_149668_2_, int p_149668_3_, int p_149668_4_)
 /*     */   {
-/*  42 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/*  44 */       return AxisAlignedBB.getBoundingBox(p_149668_2_ + this.minX, p_149668_3_ + this.minY, p_149668_4_ + this.minZ, p_149668_2_ + this.maxX, p_149668_3_ + this.maxY, p_149668_4_ + this.maxZ);
-/*     */     }
-/*     */     
-/*  47 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/*  49 */       return AxisAlignedBB.getBoundingBox(p_149668_2_ + this.minX, p_149668_3_ + this.minY, p_149668_4_ + this.minZ, p_149668_2_ + this.maxX, p_149668_3_ + this.maxY, p_149668_4_ + this.maxZ);
-/*     */     }
-/*     */     
-/*  52 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/*  54 */       return AxisAlignedBB.getBoundingBox(p_149668_2_ + this.minX, p_149668_3_ + this.minY, p_149668_4_ + this.minZ, p_149668_2_ + this.maxX, p_149668_3_ + this.maxY, p_149668_4_ + this.maxZ);
-/*     */     }
-/*     */     
 /*  57 */     return null;
 /*     */   }
 /*     */   
@@ -182,10 +167,6 @@
 /*     */     {
 /* 183 */       return ItemRegistry.chestnutItem;
 /*     */     }
-/* 185 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 187 */       return ItemRegistry.cinnamonItem;
-/*     */     }
 /* 189 */     if (this == BlockRegistry.pamCoconut)
 /*     */     {
 /* 191 */       return ItemRegistry.coconutItem;
@@ -218,10 +199,6 @@
 /*     */     {
 /* 219 */       return ItemRegistry.limeItem;
 /*     */     }
-/* 221 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 223 */       return ItemRegistry.maplesyrupItem;
-/*     */     }
 /* 225 */     if (this == BlockRegistry.pamMango)
 /*     */     {
 /* 227 */       return ItemRegistry.mangoItem;
@@ -241,10 +218,6 @@
 /* 241 */     if (this == BlockRegistry.pamPapaya)
 /*     */     {
 /* 243 */       return ItemRegistry.papayaItem;
-/*     */     }
-/* 245 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 247 */       return Items.paper;
 /*     */     }
 /* 249 */     if (this == BlockRegistry.pamPeach)
 /*     */     {
@@ -323,88 +296,23 @@
 /*     */   
 /*     */   public boolean canBlockStay(World world, int i, int j, int k)
 /*     */   {
-/* 322 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 324 */       return true;
-/*     */     }
-/* 326 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 328 */       return true;
-/*     */     }
-/* 330 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 332 */       return true;
-/*     */     }
 /* 334 */     return canPlaceBlockAt(world, i, j, k);
 /*     */   }
 /*     */   
 /*     */ 
-/*     */   public boolean canSustainLeaves(IBlockAccess world, int x, int y, int z)
-/*     */   {
-/* 340 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 342 */       return true;
-/*     */     }
-/* 344 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 346 */       return true;
-/*     */     }
-/* 348 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 350 */       return true;
-/*     */     }
-/* 352 */     return false;
-/*     */   }
-/*     */   
+
 /*     */   public boolean isOpaqueCube()
 /*     */   {
-/* 357 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 359 */       return true;
-/*     */     }
-/* 361 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 363 */       return true;
-/*     */     }
-/* 365 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 367 */       return true;
-/*     */     }
 /* 369 */     return false;
 /*     */   }
 /*     */   
 /*     */   public boolean renderAsNormalBlock()
 /*     */   {
-/* 374 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 376 */       return true;
-/*     */     }
-/* 378 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 380 */       return true;
-/*     */     }
-/* 382 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 384 */       return true;
-/*     */     }
 /* 386 */     return false;
 /*     */   }
 /*     */   
 /*     */   public int getRenderType()
 /*     */   {
-/* 391 */     if (this == BlockRegistry.pamCinnamon)
-/*     */     {
-/* 393 */       return 0;
-/*     */     }
-/*     */     
-/* 396 */     if (this == BlockRegistry.pamPaperbark)
-/*     */     {
-/* 398 */       return 0;
-/*     */     }
-/* 400 */     if (this == BlockRegistry.pamMaple)
-/*     */     {
-/* 402 */       return 0;
-/*     */     }
 /* 404 */     return 1;
 /*     */   }
 /*     */   
