@@ -63,6 +63,10 @@
 /* 63 */     OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco14);
 /* 64 */     OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco15);
 /* 65 */     OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco16);
+
+	OreDictionary.registerOre("logWood", BlockRegistry.pamMaple);
+	OreDictionary.registerOre("logWood", BlockRegistry.pamPaperbark);
+	OreDictionary.registerOre("logWood", BlockRegistry.pamCinnamon);
 /*    */   }
 /*    */ }
 
