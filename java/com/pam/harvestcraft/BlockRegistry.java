@@ -4,6 +4,7 @@
 /*     */ import cpw.mods.fml.common.registry.GameRegistry;
 /*     */ import net.minecraft.block.Block;
 /*     */ import net.minecraft.block.material.Material;
+import net.minecraft.init.Items;
 /*     */ import net.minecraftforge.common.config.Configuration;
 /*     */ import net.minecraftforge.common.config.Property;
 /*     */ 
@@ -554,7 +555,7 @@
 /* 554 */     pamchestnutSapling = new BlockPamSapling().setBlockName("pamchestnutSapling");
 /* 555 */     GameRegistry.registerBlock(pamchestnutSapling, "pamchestnutSapling");
 /*     */     
-/* 557 */     pamCinnamon = new BlockPamFruit("cinnamon").setBlockName("pamCinnamon");
+/* 557 */     pamCinnamon = new BlockPamFruitingLog("pamCinnamon", "cinnamon"); //pamCinnamon = new BlockPamFruit("cinnamon").setBlockName("pamCinnamon");
 /* 558 */     GameRegistry.registerBlock(pamCinnamon, "pamCinnamon");
 /* 559 */     pamcinnamonSapling = new BlockPamSapling().setBlockName("pamcinnamonSapling");
 /* 560 */     GameRegistry.registerBlock(pamcinnamonSapling, "pamcinnamonSapling");
@@ -599,7 +600,7 @@
 /* 599 */     pamlimeSapling = new BlockPamSapling().setBlockName("pamlimeSapling");
 /* 600 */     GameRegistry.registerBlock(pamlimeSapling, "pamlimeSapling");
 /*     */     
-/* 602 */     pamMaple = new BlockPamFruit("maple").setBlockName("pamMaple");
+/* 602 */     pamMaple = new BlockPamFruitingLog("pamMaple", "maple"); //pamMaple = new BlockPamFruit("maple").setBlockName("pamMaple");
 /* 603 */     GameRegistry.registerBlock(pamMaple, "pamMaple");
 /* 604 */     pammapleSapling = new BlockPamSapling().setBlockName("pammapleSapling");
 /* 605 */     GameRegistry.registerBlock(pammapleSapling, "pammapleSapling");
@@ -629,8 +630,9 @@
 /* 629 */     pampapayaSapling = new BlockPamSapling().setBlockName("pampapayaSapling");
 /* 630 */     GameRegistry.registerBlock(pampapayaSapling, "pampapayaSapling");
 /*     */     
-/* 632 */     pamPaperbark = new BlockPamFruit("paperbark").setBlockName("pamPaperbark");
+/* 632 */     pamPaperbark = new BlockPamFruitingLog("pamPaperbark", "paperbark"); //pamPaperbark = new BlockPamFruit("paperbark").setBlockName("pamPaperbark");
 /* 633 */     GameRegistry.registerBlock(pamPaperbark, "pamPaperbark");
+	((BlockPamFruitingLog)pamPaperbark).fruit = Items.paper;
 /* 634 */     pampaperbarkSapling = new BlockPamSapling().setBlockName("pampaperbarkSapling");
 /* 635 */     GameRegistry.registerBlock(pampaperbarkSapling, "pampaperbarkSapling");
 /*     */     

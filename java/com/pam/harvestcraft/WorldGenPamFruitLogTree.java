@@ -125,8 +125,7 @@ public boolean generate(World par1World, Random par2Random, int par3, int par4, 
 
                     if (block.isAir(par1World, par3, par4 + k1, par5) || block.isLeaves(par1World, par3, par4 + k1, par5) || block == fruitType)
                     {
-                        this.setBlockAndNotifyAdequately(par1World, par3, par4 + k1, par5, fruitType, 0);
-
+                        this.setBlockAndNotifyAdequately(par1World, par3, par4 + k1, par5, fruitType, this.metaWood);
                     }
                 }
 
